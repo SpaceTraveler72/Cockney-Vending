@@ -43,6 +43,7 @@ timing
 *.sopc_builder
 *.summary
 *.tcl
+*.sld
 *.txt # Explicitly add any text files used
 *~
 *example*
