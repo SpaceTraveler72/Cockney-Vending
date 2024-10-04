@@ -3,7 +3,7 @@ module mux2_1(
 	output logic result
 );
 
-result = (A1 & ~selector) | (A2 & selector);
+assign result = (A1 & ~selector) | (A2 & selector);
 
 
 endmodule

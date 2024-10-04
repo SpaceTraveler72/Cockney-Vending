@@ -4,7 +4,7 @@ module seven_seg(
 );
 
 logic [15:0]decode;
-dec416(.a(a[3:0]), .result(decode));
+dec416 decodeInput(.a(a[3:0]), .result(decode));
 
 assign result[0] = decode[1] | decode[4] | decode[11] | decode[13];
 assign result[1] = decode[5] | decode[6] | decode[11] | decode[12] | decode[14] | decode[15];
