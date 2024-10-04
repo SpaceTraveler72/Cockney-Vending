@@ -55,10 +55,10 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name SYSTEMVERILOG_FILE main.sv
-set_location_assignment PIN_A2 -to switches[1]
-set_location_assignment PIN_A3 -to switches[2]
-set_location_assignment PIN_A4 -to realClk
-set_location_assignment PIN_A5 -to buttons[0]
+set_location_assignment PIN_C11 -to switches[1]
+set_location_assignment PIN_D12 -to switches[2]
+set_location_assignment PIN_P11 -to realClk
+set_location_assignment PIN_B8 -to buttons[0]
 set_global_assignment -name SYSTEMVERILOG_FILE debouncer.sv
 set_global_assignment -name SYSTEMVERILOG_FILE D_FF_neg.sv
 set_global_assignment -name SYSTEMVERILOG_FILE seven_seg.sv
@@ -74,5 +74,28 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SYSTEMVERILOG_FILE state_changer.sv
 set_global_assignment -name SYSTEMVERILOG_FILE get_outputs.sv
 set_global_assignment -name SYSTEMVERILOG_FILE led_output.sv
+set_location_assignment PIN_A7 -to buttons[1]
+set_location_assignment PIN_C17 -to changeDisplay[6]
+set_location_assignment PIN_C14 -to changeDisplay[0]
+set_location_assignment PIN_E15 -to changeDisplay[1]
+set_location_assignment PIN_C15 -to changeDisplay[2]
+set_location_assignment PIN_C16 -to changeDisplay[3]
+set_location_assignment PIN_E16 -to changeDisplay[4]
+set_location_assignment PIN_D17 -to changeDisplay[5]
+set_location_assignment PIN_B11 -to outputLED[0]
+set_location_assignment PIN_A11 -to outputLED[1]
+set_location_assignment PIN_D14 -to outputLED[2]
+set_location_assignment PIN_E14 -to outputLED[3]
+set_location_assignment PIN_C10 -to switches[0]
+set_location_assignment PIN_A8 -to stateLED[0]
+set_location_assignment PIN_A9 -to stateLED[1]
+set_location_assignment PIN_A10 -to stateLED[2]
+set_location_assignment PIN_B10 -to stateLED[3]
+set_location_assignment PIN_C18 -to stateDisplay[0]
+set_location_assignment PIN_D18 -to stateDisplay[1]
+set_location_assignment PIN_E18 -to stateDisplay[2]
+set_location_assignment PIN_B16 -to stateDisplay[3]
+set_location_assignment PIN_A17 -to stateDisplay[4]
+set_location_assignment PIN_A18 -to stateDisplay[5]
+set_location_assignment PIN_B17 -to stateDisplay[6]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_location_assignment PIN_A8 -to buttons[1]
