@@ -32,6 +32,8 @@ state_changer(.newState(newState), .clk(clk), .reset(reset), .state(storedState)
 //get the outputs from the current state
 get_outputs(.state(storedState), .gruel(gruel), .change(change));
 
+
+
 //setup 7 segment displays for state and change
 seven_seg createStateDisplay(.a(storedState), .result(stateDisplay));
 //change to a is coventing from size 3 to size 4 (may cause problems)
