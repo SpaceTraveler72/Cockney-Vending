@@ -5,6 +5,9 @@
 # a cloned repository to be used (usually) immediately without regenerating
 # Altera IP blocks.
 
+#stuff I added
+output_files/*
+
 # Need to keep all HDL files and timing constraint files
 # *.vhd
 # *.v
